@@ -1,1 +1,20 @@
-{}
+{
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
+  "extends": [
+    "config:recommended",
+    ":semanticCommitTypeAll(fix)",
+    "mergeConfidence:all-badges"
+
+  ],
+  "packageRules": [
+    {
+      "matchDatasources": [
+        "docker"
+      ],
+      "matchPackageNames": [
+        "php"
+      ],
+      "separateMinorPatch": true
+    }
+  ]
+}
