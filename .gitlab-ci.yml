@@ -2,7 +2,7 @@ stages:
   - build
 
 build-job:
-  image: php:8.1.0
+  image: php:8.5.6
   stage: build
   script:
     - exit 0
